@@ -72,7 +72,7 @@ make_backup () {
 
     # Remove file to save space
     rm -fR *.tar.gz
-
+    rm -fR $FILENAME-$DATETIME
     if  [ "$?" != "0" ]; then
         exit 1
     fi
